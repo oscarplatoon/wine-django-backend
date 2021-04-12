@@ -83,10 +83,11 @@ DATABASES = {
     }
 }
 
-CORS_ORIGIN_WHITELIST = (
-    'http://localhost:3000/'
-    'http://lima-wines-frontend.herokuapp.com',
-    )
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:3000/',
+    'https://localhost:3000/',
+    'http://lima-wines-frontend.herokuapp.com'
+    ]
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
